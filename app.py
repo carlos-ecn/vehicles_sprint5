@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-carros = pd.read_csv('C:/Users/carlo/Downloads/GIT/Tripleten/vehicles_sprint5/vehicles.csv')
+carros = pd.read_csv('vehicles.csv')
 
 hist_button = st.button('Criar histograma')
 
@@ -21,6 +21,7 @@ if scat_button:
     fig2 = px.scatter(carros, x='odometer', y='price')
 
     st.plotly_chart(fig2, use_container_width=True)
+
 
 
 
