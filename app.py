@@ -37,13 +37,13 @@ def plot_graf(grafico):
         fig = px.histogram(carros, x='odometer')
     elif grafico == 'Gráfico de dispersão odometro x preço':
         fig = px.scatter(carros, x='odometer', y='price')
-    elif grafico 'Gráfico histogram ano de fabricação dos carros':
+    elif grafico == 'Gráfico histogram ano de fabricação dos carros':
         fig = px.histogram(carros, x='model_year')
-    elif grafico 'Gráfico quantidade dos modelos de carros':
+    elif grafico == 'Gráfico quantidade dos modelos de carros':
         fig = px.bar(carros, x='model')
-    elif grafico 'Gráfico de dispersão dos modelos de carros x preço':
+    elif grafico == 'Gráfico de dispersão dos modelos de carros x preço':
         fig = px.scatter(carros, x='model', y='price')
-    elif grafico 'Gráfico de dispersão do ano de fabricação dos carros x preço':
+    elif grafico == 'Gráfico de dispersão do ano de fabricação dos carros x preço':
         fig = px.scatter(carros, x='model_year', y='price')
     else:
         st.warning('Nenhum gráfico selecionado.')
